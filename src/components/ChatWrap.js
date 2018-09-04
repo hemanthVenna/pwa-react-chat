@@ -9,7 +9,7 @@ class Chat extends Component {
    messages : []
    }
 
-   this.socket = io('https://boiling-cove-13790.herokuapp.com/',
+   this.socket = io('https://boiling-cove-13790.herokuapp.com/',{
                       path: '/getData'
                      });
     this.socket.on('chat message', function(data){
